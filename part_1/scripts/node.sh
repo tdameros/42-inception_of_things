@@ -9,4 +9,4 @@ export K3S_URL="https://$MASTER_IP:6443"
 export K3S_TOKEN_FILE=$NODE_TOKEN_PATH
 export INSTALL_K3S_EXEC="--flannel-iface=eth1"
 
-curl -sfL https://get.k3s.io | sh - ;
+curl -sfL https://get.k3s.io | sh -

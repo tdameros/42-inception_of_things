@@ -54,9 +54,11 @@ def provision_script(vm, vm_settings)
     return nil
   end
   environment_variables = {}
-  vm_settings['script']['env'].map do |variable|
-    variable.map do |key, value|
-      environment_variables[key] = interpolate_settings(value)
+  if vm_settings['script']['env']
+    vm_settings['script']['env'].map do |variable|
+      variable.map do |key, value|
+        environment_variables[key] = interpolate_settings(value)
+      end
     end
   end
   path = interpolate_settings(vm_settings['script']['path'])
