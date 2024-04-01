@@ -1,0 +1,15 @@
+default:
+  provider: "vmware_fusion"
+  box_name: "bento/ubuntu-22.04"
+  vagrant_sync: "disabled"
+
+virtual_machines:
+  master:
+    hostname: "tdamerosS"
+    ip: "192.168.56.110"
+    memory: "2048"
+    cpus: "2"
+    files:
+      - "configs/:/home/vagrant/"
+    script:
+      path: "scripts/master.sh"
