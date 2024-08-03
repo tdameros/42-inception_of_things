@@ -1,0 +1,4 @@
+node-token
+.vagrant/
+.idea/
+*.log
