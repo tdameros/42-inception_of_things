@@ -1,4 +1,4 @@
-# Inception-of-Things (IoT) - 42 School Project
+# Inception-of-Things (IoT)
 
 ## Description
 
